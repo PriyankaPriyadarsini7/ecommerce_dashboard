@@ -31,7 +31,7 @@ export default function Layout() {
       <header className="bg-[#FFF9F0] dark:bg-gray-800 shadow-lg fixed top-0 left-0 right-0 z-10">
         <div className="max-w-[var(--page-max-w)] mx-auto px-4 py-3 flex items-center md:gap-2 gap-y-3 sm:gap-y-0 sm:gap-x-6 justify-between relative">
           {/* Left section: Title + Search */}
-          <div className="flex items-center ml-4 sm:ml-0 md:gap-10 sm:gap-2 flex-1 justify-between sm:justify-start">
+          <div className="flex items-center ml-4 sm:ml-0 md:gap-10 sm:gap-2 flex-1 justify-between sm:justify-start flex-shrink-0">
             <NavLink
               to="/"
               className="text-xl md:text-3xl sm:text-lg font-bold text-blue-600 dark:text-blue-300 whitespace-nowrap"
@@ -48,7 +48,7 @@ export default function Layout() {
           </div>
 
           {/* --- Centered Navigation --- */}
-          <nav className="md:text-base sm:text-sm hidden sm:flex gap-10 sm:gap-5 justify-center flex-1">
+          <nav className="absolute left-1/2 -translate-x-1/2 md:text-base sm:text-sm hidden sm:flex gap-10 sm:gap-5">
             <NavLink
               to="/inventory"
               className={({ isActive }) =>
